@@ -1,0 +1,97 @@
+header{
+  background-color: #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+header a.current{
+  text-decoration: none;
+
+}
+header h1{
+  color:#fff;
+  text-shadow: 2px 2px 2px #02010a;
+}
+#imagen-central{
+  text-align: center;
+  background-color: #82c3a6;
+}
+#imagen-secundaria{
+  text-align: right;
+  text-align: left;
+  background-color: #d5c75f;
+  border: 1px;
+}
+#imagen-secundaria{
+  display: flex;
+
+}
+#imagen-secundaria .imagen{
+  text-shadow: #82c3a6;
+  width: 100%;
+  border: 2px;
+}
+#imagen-secundaria .imagen img{
+  width: 100%;
+}
+#imagen-secundaria{
+  flex-direction: column;
+}
+#paisaje:hover{
+  transform: rotate(10deg);
+  box-shadow: 10px 10px 10px #82c3a6;
+  border: 2px solid;
+}
+#retrato:hover{
+  transform: translate(5px 20px);
+  box-shadow: #82c3a6;
+  border: 2px solid;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+}
+footer div{
+  background-color: #C6d5c5;
+}
+#imagen1{
+  filter: blur(10px);
+}
+#imagen2,
+#imagen4,
+#imagen6{
+  filter: grayscale(100%);
+}
+#imagen3{
+  filter: sepia(90%);
+}
+@media (min-width:992px){/* Rules for the desktop*/
+  #imagen-secundaria .imagen{
+    width: 50%;
+  }
+  #imagen-secundaria{
+    flex-direction: row;
+  }
+  footer{
+    flex-direction: row;
+  }
+  footer div{
+    border-radius: 10px;
+    width: 25%;
+  }
+  #gallery img{
+    width:33%;
+  }
+  header{
+    flex-direction: row;
+  }
+}
+li{
+  list-style: none;
+}
+a{
+  color:#fff;
+}
