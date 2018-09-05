@@ -44,6 +44,9 @@ header h1{
   box-shadow: 10px 10px 10px #82c3a6;
   border: 2px solid;
 }
+#paisaje{
+  transition: 1s;
+}
 #retrato:hover{
   transform: translate(5px 20px);
   box-shadow: #82c3a6;
@@ -56,7 +59,9 @@ footer{
 }
 footer div{
   background-color: #C6d5c5;
+  padding:20px;
 }
+
 #imagen1{
   filter: blur(10px);
 }
@@ -68,9 +73,17 @@ footer div{
 #imagen3{
   filter: sepia(90%);
 }
+li{
+  list-style: none;
+}
+a{
+  color:#fff;
+}
+
 @media (min-width:992px){/* Rules for the desktop*/
   #imagen-secundaria .imagen{
     width: 50%;
+
   }
   #imagen-secundaria{
     flex-direction: row;
@@ -82,16 +95,17 @@ footer div{
     border-radius: 10px;
     width: 25%;
   }
-  #gallery img{
-    width:33%;
+  #gallery div{
+    width: 33%;
+    display: inline-block;
+    background-color: 
+  }
+  #gallery div img{
+    width:80%;
   }
   header{
     flex-direction: row;
   }
-}
-li{
-  list-style: none;
-}
-a{
-  color:#fff;
+section{
+  background-color: #d5c75f;
 }
