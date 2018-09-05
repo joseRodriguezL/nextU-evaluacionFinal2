@@ -2,9 +2,13 @@ header{
   background-color: #5b7989;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  display: flex;
-  justify-content: space-between;
   padding: 25px;
+}
+body{
+  font-family: Dancing Script;
+  font-size: 18px;
+  text-align: center;
+
 }
 header a.current{
   text-decoration: none;
@@ -13,6 +17,11 @@ header a.current{
 header h1{
   color:#fff;
   text-shadow: 2px 2px 2px #02010a;
+  display: block;
+}
+.menu{
+  display: flex;
+  display: inline-block;
 }
 #imagen-central{
   text-align: center;
@@ -23,6 +32,7 @@ header h1{
   text-align: left;
   background-color: #d5c75f;
   border: 1px;
+
 }
 #imagen-secundaria{
   display: flex;
@@ -75,6 +85,8 @@ footer div{
 }
 li{
   list-style: none;
+  margin: 10px;
+  display: inline-block;
 }
 a{
   color:#fff;
@@ -83,7 +95,6 @@ a{
 @media (min-width:992px){/* Rules for the desktop*/
   #imagen-secundaria .imagen{
     width: 50%;
-
   }
   #imagen-secundaria{
     flex-direction: row;
@@ -98,13 +109,18 @@ a{
   #gallery div{
     width: 33%;
     display: inline-block;
-    background-color: 
+    margin-bottom:15px;
+    margin-top:15px;
+    text-align: center;
   }
   #gallery div img{
-    width:80%;
+    width:90%;
+
   }
   header{
     flex-direction: row;
+    display: flex;
+    justify-content: space-between;
   }
 section{
   background-color: #d5c75f;
